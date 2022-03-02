@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(7, 7, 77);
+}
+
+nav {
+    top: 0%;
+    left: 0%;
+    right: .01px;
+
+    position: fixed;
+    background: linear-gradient(to bottom right, rgb(116, 168, 185), rgb(7, 7, 77));
+    border: 1px solid white;
+    height: 30px;
+}
+
+.navOptions {
+    display: inline-block;
+    color: rgb(223, 222, 222);
+    text-decoration: none;
+    font-weight: bold;
+    
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-top: 50px;
+}
+
+#myWidgetsHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#my_widgets {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mediaWidgets {
+    color: white;
+    margin-left:-50px;
+}
+
+#pwWidgets {
+    margin-right: -50px;
+}
+
+#mediaWidgets iframe {
+    width: 560px;
+    height: 315px;
+}
+
+
+#twitterWidget {
+    width: 560px;
+    height: 315px;
+    overflow: scroll;
+
+    margin-top: 10px;
+}
+
+
+
+/* obtained from https://www.formget.com/password-strength-checker-in-jquery/ */
+#pwCheckerContainer, #pwGenContainer {
+	width: 535px;
+	background: #ffffff;
+	padding: 20px;
+	margin: 90px auto;
+	border-radius: 5px;
+	height: 150px;
+	border: 2px solid gray;
+}
+
+#pwCheckerHeader, #pwGenHeader {
+	text-align: center;
+	background-color: #FEFFED;
+	border-radius: 5px;
+	margin: -39px -20px 10px -20px;
+}
+
+h2 {
+	padding-top: 10px;
+}
+
+#pwCheckerContent, #pwGenContent {
+	margin-left: 57px;
+	margin-top: 40px;
+}
+
+#register label, #genRandomPassword label {
+	margin-right: 5px;
+}
+
+#register input, #randomPassword {
+	padding: 5px 14px;
+	border: 1px solid #d5d9da;
+	box-shadow: 0 0 9px #0E34F5 inset;
+	width: 272px;
+	font-size: 1em;
+	height: 25px;
+}
+
+#register .short {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: larger;
+}
+
+#register .weak {
+	font-weight: bold;
+	color: orange;
+	font-size: larger;
+}
+
+#register .good {
+	font-weight: bold;
+	color: #2D98F3;
+	font-size: larger;
+}
+
+#register .strong {
+	font-weight: bold;
+	color: limegreen;
+	font-size: larger;
+}
+/* end obtained from https://www.formget.com/password-strength-checker-in-jquery/ */

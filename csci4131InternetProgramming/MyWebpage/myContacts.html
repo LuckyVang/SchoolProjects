@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="myContacts.css" rel="stylesheet">
+        <title>Vang2959's HW1 Webpage</title>
+    </head>
+
+    <body>
+        <!--table of contents-->
+        <nav>
+            <a href="myContacts.html" class="navOptions">My Contacts</a>
+            <a href="myForms.html" class="navOptions">Form Input</a>
+            <a href="myWidgets.html" class="navOptions">My Widgets</a>
+        </nav>
+        
+        <!--my_contacts webpage-->
+        <h1>My Contacts</h1>
+        <div id="myContacts">
+            <table>
+                <tr class="evenRows">
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                </tr>
+
+                <tr class="contactInfo" onmouseenter='changeEnlargedImage("images/joanGabel.jpg");
+                                                      calcDistanceHover(0);'>
+                    <td>Joan Gabel</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        202 Morrill Hall<br>
+                        100 Church Street S.E.<br>
+                        University of Minnesota<br>
+                        Minneapolis MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        President of the University of Minnesota <br>
+                        <img src="images/joanGabel.jpg" alt="joanGabel">
+                    </td>
+                    <td>upres@umn.edu</td>
+                    <td><a href="https://president.umn.edu/about">Joan Gabel</a></td>
+                </tr>
+
+                <tr class="evenRows contactInfo" onmouseenter='changeEnlargedImage("images/chirsDovolis.jpg");
+                                                               calcDistanceHover(1);'>
+                    <td>Chris J. Dovolis</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        Kenneth H. Keller Hall<br>
+                        Room 6-195<br>
+                        200 Union Street Se<br>
+                        Minneapolis, MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        Teaching Professor, Distinguished University Teaching Professor<br>
+                        <img src="images/chirsDovolis.jpg" alt="chirsDovolis">
+                    </td>
+                    <td>dovol002@umn.edu</td>
+                    <td><a href="https://cse.umn.edu/cs/chris-dovolis">Chris Dovolis</a></td>
+                </tr>
+                
+                <tr class="contactInfo" onmouseenter='changeEnlargedImage("images/mattiaFazzini.png");
+                                                      calcDistanceHover(2);'> 
+                    <td>Mattia Fazzini</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        Kenneth H. Keller Hall<br>
+                        Room 6-189<br>
+                        200 Union Street Se<br>
+                        Minneapolis, MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        Assistant Professor, Department of Computer Science & Engineering<br>
+                        <img src="images/mattiaFazzini.png" alt="mattiaFazzini">
+                    </td>
+                    <td>mfazzini@umn.edu</td>
+                    <td><a href="https://cse.umn.edu/cs/mattia-fazzini">Mattia Fazzini</a></td>
+                </tr>
+
+                <tr class="evenRows contactInfo" onmouseenter='changeEnlargedImage("images/chirsKauffman.png");
+                                                               calcDistanceHover(3);'>
+                    <td>Christopher Kauffman</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        Shepherd Labs<br>
+                        Room 327<br>
+                        100 Union St SE<br>
+                        Minneapolis, MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        Associate Teaching Professor, Department of Computer Science & Engineering<br>
+                        <img src="images/chirsKauffman.png" alt="chirsKauffman">
+                    </td>
+                    <td>kauffman@umn.edu</td>
+                    <td><a href="https://cse.umn.edu/cs/christopher-kauffman">Christopher Kauffman</a></td>
+                </tr>
+
+                <tr class="contactInfo" onmouseenter='changeEnlargedImage("images/carlSturtivant.jpg");
+                                                      calcDistanceHover(4);'>
+                    <td>Carl Sturtivant</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        Kenneth H. Keller Hall<br>
+                        Room 6-197<br>
+                        200 Union Street Se<br>
+                        Minneapolis, MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        Teaching Professor, Department of Computer Science & Engineering<br>
+                        <img src="images/carlSturtivant.jpg" alt="carlSturtivant">
+                    </td>
+                    <td>carl@umn.edu</td>
+                    <td><a href="https://cse.umn.edu/cs/carl-sturtivant">Carl Sturtivant</a></td>
+                </tr>
+
+                <tr class="evenRows contactInfo" onmouseenter='changeEnlargedImage("images/ericVanWyk.png");
+                                                               calcDistanceHover(5);'>
+                    <td>Eric Van Wyk</td>
+                    <td>Academic</td>
+                    <td class="contactLocation">
+                        Kenneth H. Keller Hall<br>
+                        Room 6-203<br>
+                        200 Union Street Se<br>
+                        Minneapolis, MN 55455
+                    </td>
+                    <td class="contactDescription">
+                        Professor, Department of Computer Science & Engineering<br>
+                        <img src="images/ericVanWyk.png" alt="ericVanWyk">
+                    </td>
+                    <td>evw@umn.edu</td>
+                    <td><a href="https://cse.umn.edu/cs/eric-van-wyk">Eric Van Wyk</a></td>
+                </tr>
+            </table>
+
+            <div id="enlargedImageContainer">
+                <div id="enlargedImageDiv"><img src="images/breakfast.jpg" alt="enlarged image on the side" id="enlargedImage"></div>
+                <div id="targetDistanceContainer">
+                    <span class="targetCoordsText">Target Coordinates: </span><span id="targetLat">44.9727</span>
+                        <span class="targetCoordsText">, </span><span id="targetLong">-93.23540000000003</span> <br><br>
+
+                    <span id="targetDistanceText">Distance to Target location (metres): </span><span id="targetDistanceValue"> TBD</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="mapContainer">
+            <div id="routeInstructions"></div>
+            <div id="map"></div>
+            <div id="mapTools">
+                <div id="mapInputs">
+                    <span>Find </span>
+                    <select id="searchOptions">
+                        <option value="restaurant">Restaurant</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="parking">Parking</option>
+                        <option value="supermarket">Supermarket</option>
+                        <option value="other">Other</option>
+                    </select> <br>
+                    
+                    <input id="otherSearchOptions" type="text" placeholder="Enter Other Places" disabled> <br>
+
+                    <span>in </span><input type="text" id="searchRadius" value="1"><span> miles</span><br><br>
+
+                    <!-- <button id="searchButton" onclick="mapSearch()">Search</button> -->
+                    <input type="button" id="searchButton" onclick="mapSearch()" value="Search">
+
+                </div>
+
+                <div id="getDirectionsContainer">
+                    <div>Take me to: </div>
+                    <!--options are included using jquery-->
+                    <select id="getDirectionsOptions">
+                        <option value="joanGabel">John Gabel</option>
+                        <option value="chrisDovolis">Chris Dovolis</option>
+                        <option value="mattiaFazzini">Mattia Fazzini</option>
+                        <option value="chrisKauffman">Christopher Kauffman</option>
+                        <option value="carlSturtivant">Carl Sturtivant</option>
+                        <option value="ericWyk">Eric Van Wyk</option>
+                    </select> <br>
+                        
+                    <span>From </span><input type="text" id="getDirectionsStarting" placeholder="starting location"> <br>
+                    
+                    <div id="getDirectionsTransportOptions">
+                        <div id="getDirectionsBy">By </div>
+
+                        <div id="getDirectionsButtons">
+                            <label for="drivingRadioOption">Drive&nbsp;&nbsp;</label> 
+                            <input type="radio" id="drivingRadioOption" name="getDirectionsTransportationMode" value="DRIVING" checked> <br>
+                            <label for="walkingRadioOption">Walk&nbsp;&nbsp;&nbsp;</label> 
+                            <input type="radio" id="walkingRadioOption" name="getDirectionsTransportationMode" value="WALKING"> <br> 
+                            <label for="transitRadioOption">Transit</label> 
+                            <input type="radio" id="transitRadioOption" name="getDirectionsTransportationMode" value="TRANSIT"> <br>
+                        </div>
+                    </div>
+
+                    <input type="button" value="Go" onclick="getDirectionsOnclick()">
+                </div>
+            </div>
+        </div>
+
+        <script src="myContacts.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0qSOtdzJL3EXR1P-YO_0trKODiDsEOMo&libraries=places,directions&callback=initMap"></script>
+    
+    </body>
+</html>
